@@ -1,0 +1,22 @@
+* text=auto
+
+*.asm   text eol=lf linguist-language=Assembly
+*.8080  text eol=lf linguist-language=Assembly
+*.z80   text eol=lf linguist-language=Assembly
+
+*.hex   text eol=lf
+*.prn   text eol=lf
+
+*.com   binary
+*.exe   binary
+*.out   binary
+
+*.md    text eol=lf
+
+*.png   binary
+*.jpeg  binary
+
+LICENSE         text eol=lf
+README.md       text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
