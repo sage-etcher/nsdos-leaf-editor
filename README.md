@@ -28,14 +28,14 @@ supplied are a short description of directives used
 | `+-/*` | preprocessor arithmatic |
 | `''` | string specifier, CANNOT be doube quotes |
 
-number definitions
+number definitions as used within this project
 
 | Base | Definition | Example (24 decimal) |
 |:---- |:---------- |:-------------------- |
-| Hex (16) | 0xxH | 018H |
-| Dec (10) | xx | 24 |
-| Oct (8) | 0xxxxQ | 030Q |
-| Bin (2) | 0xxxx$xxxxB | 00001$1000B |
+| Hex (16) | 0<i>xx</i>H | 018H |
+| Dec (10) | <i>xx</i> | 24 |
+| Oct (8) | 0<i>xxxx</i>Q | 030Q |
+| Bin (2) | 0<i>xxxx</i>$<i>xxxx</i>B | 00001$1000B |
 
 ## License (Apache Versoin 2.0)
 
