@@ -4,6 +4,39 @@ An ED (GNU + CP/M) inspired editor for the NorthStar Graphics Disk Operating Sys
 I'd recomend having syntax highlighting for the intel 8080's pnemonics, and tabsize of 8. Though it's perfectly acceptable to view it with no highlighting.
 wrote a simple vim syntax file for it, [here](https://github.com/sage-etcher/vim-i8080-syntax), but for other edittors you're on your own
 
+## Assembling Information
+
+The assembly uses intel 8080 pnemonics and is designed to compile using CP/M's `ASM.COM` and `LOAD.COM`. All other methods of assembly are untested, and as such, may require modifications to directive or comments declarations.
+
+__note:__ getting the assembled binary off of CP/M and onto NSDOS can be difficult. One (non-ideal) method is to write the file in binary, using `MC000` (monitor program) and then save that chunk of memory into the required file.
+
+supplied are a short description of directives used
+
+| Directive | Description |
+|:--------- |:------------|
+| `ORG` | set program origin point |
+| `END` | end of source code |
+| `EQU` | pre-processor constant |
+| `DB` | define Byte(s) |
+| `DW` | define Word(s) |
+| `DS` | declare _n_ Bytes of data |
+| `;` | comment specifer |
+| `:` | define a label |
+| `$ (in EQU)` | current memory location |
+| `$` | empty spacer, helpful in numbers and labels |
+| `!` | virtual newline |
+| `+-/*` | preprocessor arithmatic |
+| `''` | string specifier, CANNOT be doube quotes |
+
+number definitions
+
+| Base | Definition | Example (24 decimal) |
+|:---- |:---------- |:-------------------- |
+| Hex (16) | 0xxH | 018H |
+| Dec (10) | xx | 24 |
+| Oct (8) | 0xxxxQ | 030Q |
+| Bin (2) | 0xxxx$xxxxB | 00001$1000B |
+
 ## License (Apache Versoin 2.0)
 
 Copyright 2023 Sage I. Hendricks  
