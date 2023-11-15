@@ -8,7 +8,7 @@ wrote a simple vim syntax file for it, [here](https://github.com/sage-etcher/vim
 
 The assembly uses intel 8080 pnemonics and is designed to assemble using CP/M's `ASM.COM` and `LOAD.COM`. All other methods of assembly are untested, and as such, may require modifications to directive or comments declarations.
 
-__note:__ getting the assembled binary off of CP/M and onto NSDOS can be difficult. One (non-ideal) method is to write the file in binary, using `MC000` (monitor program) and then save that chunk of memory into the required file.
+__note:__ getting the assembled binary off of CP/M and onto NSDOS can be difficult. One, non-ideal, method is to write the file as hex, using `MC000` (nsdos monitor program) and then save that chunk of memory into the required file.
 
 supplied are a short description of directives used
 
